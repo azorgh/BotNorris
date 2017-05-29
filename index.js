@@ -34,4 +34,4 @@ client.on('message', msg => {
     }
 });
 
-client.login('**REMOVED**');
+client.login(process.env.BOT_TOKEN);
