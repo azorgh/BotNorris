@@ -1,0 +1,2 @@
+Use this link to authorize the bot :
+https://discordapp.com/oauth2/authorize?client_id=318734856635023361&scope=bot&permissions=3072
