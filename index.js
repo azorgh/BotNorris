@@ -29,7 +29,7 @@ client.on('message', msg => {
         } );
         request.end();
     }else if (msg.content === '!infos') {
-        var texte = `BotNorris a été developpé par Azorgh (azorgh.ow@gmail.com).\nHébergé sur Heroku, il utilise les Fact de http://www.chucknorrisfacts.fr.`;
+        var texte = `BotNorris a été developpé par Azorgh (azorgh.ow@gmail.com).\nHébergé sur Heroku, il utilise les Facts de http://www.chucknorrisfacts.fr.`;
         msg.reply(texte);
     }
 });
