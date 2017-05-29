@@ -23,10 +23,14 @@ client.on('message', msg => {
             res.setEncoding('utf8');
             res.on('data', function( data ) {
                 json = JSON.parse(data);
+                console.log(msg);
                 msg.reply(entities.decode(json[0].fact));
             } );
         } );
         request.end();
+    }else if (msg.content === '!infos') {
+        var texte = `BotNorris a été developpé par Azorgh (azorgh.ow@gmail.com).\nHébergé sur Heroku, il utilise les Fact de http://www.chucknorrisfacts.fr.`;
+        msg.reply(texte);
     }
 });
 
