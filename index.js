@@ -23,7 +23,7 @@ client.on('message', msg => {
             res.setEncoding('utf8');
             res.on('data', function( data ) {
                 json = JSON.parse(data);
-                console.log(msg);
+                console.log(msg.user.User.username + '#' + msg.user.User.discriminator);
                 msg.reply(entities.decode(json[0].fact));
             } );
         } );
